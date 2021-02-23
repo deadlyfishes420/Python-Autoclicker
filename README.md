@@ -1,4 +1,3 @@
-# autoclicker
-![Screenshot](https://github.com/deadlyfishes420/Python-Autoclicker/blob/main/images/WideHardo.png)
+# Currency converter
 
-my attempt at making some autoclicker, also my first time using git
+I'm not good at python ok, save your slander for another time please
