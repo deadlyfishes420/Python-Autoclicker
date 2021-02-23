@@ -1,8 +1,5 @@
 import parser
-import mathasdasdasd
-asd
-asd
-asd
-asd
-asd
-asadasd
+import math
+
+x = 234989
+print(x)
