@@ -49,6 +49,7 @@ def on_press(key):
     elif key == exit_key:
         click_thread.exit()
         listener.stop()
+    print("Press 'E' to stop clicking")
 
 
 with Listener(on_press=on_press) as listener:
