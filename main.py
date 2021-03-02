@@ -34,6 +34,7 @@ class ClickMouse(threading.Thread):
                 time.sleep(self.delay)
             time.sleep(0.1)
 
+print("Press 'S' to start clicking")
 
 mouse = Controller()
 click_thread = ClickMouse(delay, button)
