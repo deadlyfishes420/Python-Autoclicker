@@ -41,7 +41,7 @@ class ClickMouse(threading.Thread):
                 time.sleep(self.delay)
             time.sleep(0.1)
 
-print("Press 'S' to start clicking")
+print("Press 'S' to acquire the best gaming chair")
 
 mouse = Controller()
 click_thread = ClickMouse(delay, button)
@@ -57,7 +57,7 @@ def on_press(key):
     elif key == exit_key:
         click_thread.exit()
         listener.stop()
-    print("Press 'E' to stop clicking")
+    print("Press 'E' to dispose of your gaming chair")
 
 
 with Listener(on_press=on_press) as listener:
