@@ -3,17 +3,17 @@ import threading
 from pynput.mouse import Button, Controller
 from pynput.keyboard import Listener, KeyCode
 
-delay = float(input("Set delay: "))
-button = Button.left
-start_stop_key = KeyCode(char='s')
-exit_key = KeyCode(char='e')
-
 print("██████╗░██╗░░░██╗░░░░█████╗░██╗░░░██╗████████╗░█████╗░░█████╗░██╗░░░░░██╗░█████╗░██╗░░██╗███████╗██████╗░")
 print("██╔══██╗╚██╗░██╔╝░░░██╔══██╗██║░░░██║╚══██╔══╝██╔══██╗██╔══██╗██║░░░░░██║██╔══██╗██║░██╔╝██╔════╝██╔══██╗")
 print("██████╔╝░╚████╔╝░░░░███████║██║░░░██║░░░██║░░░██║░░██║██║░░╚═╝██║░░░░░██║██║░░╚═╝█████═╝░█████╗░░██████╔╝")
 print("██╔═══╝░░░╚██╔╝░░░░░██╔══██║██║░░░██║░░░██║░░░██║░░██║██║░░██╗██║░░░░░██║██║░░██╗██╔═██╗░██╔══╝░░██╔══██╗")
 print("██║░░░░░░░░██║░░░██╗██║░░██║╚██████╔╝░░░██║░░░╚█████╔╝╚█████╔╝███████╗██║╚█████╔╝██║░╚██╗███████╗██║░░██║")
 print("╚═╝░░░░░░░░╚═╝░░░╚═╝╚═╝░░╚═╝░╚═════╝░░░░╚═╝░░░░╚════╝░░╚════╝░╚══════╝╚═╝░╚════╝░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝")
+
+delay = float(input("Set delay: "))
+button = Button.left
+start_stop_key = KeyCode(char='s')
+exit_key = KeyCode(char='e')
 
 class ClickMouse(threading.Thread):
     def __init__(self, delay, button):
